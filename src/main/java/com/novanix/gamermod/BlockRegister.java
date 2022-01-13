@@ -17,6 +17,9 @@ public class BlockRegister
 
 	private static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, GamerMod.MOD_ID);
 	
+	// Contains the names used to register each block
+	// This exists because the name is required to create BlockItems
+	// Theres probably a better way to handle this, but Forge's documentation doesnt provide an example of creating block items
 	private static final HashMap<Block, String> blockNames = new HashMap<Block, String>();
 	
 	public static final Block OAK_TILES = register("oak_tiles", new Block(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
