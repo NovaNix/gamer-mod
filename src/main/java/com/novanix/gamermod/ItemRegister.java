@@ -20,9 +20,10 @@ public class ItemRegister
 
 	private static final Logger LOGGER = LogManager.getLogger();
 	
-	private static final Item OAK_TILES = registerBlock(BlockRegister.OAK_TILES, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final Item OAK_TILES = registerBlock(BlockRegister.OAK_TILES, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	
-	private static final Item GAMER_GLASSES = register("gamer_glasses", new GamerGlassesItem());
+	public static final Item METAL_CAKE = registerBlock(BlockRegister.METAL_CAKE, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item GAMER_GLASSES = register("gamer_glasses", new GamerGlassesItem());
 	
 	public static void register()
 	{

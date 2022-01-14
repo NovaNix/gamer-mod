@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "gamermod:block/oak_tile_slab_top"
+    },
+    "type=bottom": {
+      "model": "gamermod:block/oak_tile_slab"
+    },
+    "type=double": {
+      "model": "gamermod:block/oak_tiles"
+    }
+  }
+}
