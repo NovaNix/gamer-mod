@@ -2,7 +2,11 @@ package com.novanix.gamermod.common.armor;
 
 import java.util.function.Consumer;
 
+import com.novanix.gamermod.client.models.ModelArmor;
+
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.HumanoidModel;
+import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.CreativeModeTab;
@@ -31,11 +35,14 @@ public class GamerGlassesItem extends Item
 	{
 		consumer.accept(new IItemRenderProperties() 
 		{
+			@SuppressWarnings("unchecked")
 			@Override
 			public <A extends HumanoidModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlot armorSlot, A _default)
 		    {
-				HumanoidModel Humanoid = new HumanoidModel(entityLiving.) 
-		        return null;
+				// Borrowed from botania since the whole entity layer system makes no sense to me
+				var entityModels = Minecraft.getInstance().getEntityModels();
+				var root = entityModels.bakeLayer(ModelLayers.PLAYER_HEAD);
+				return (A) new ModelArmor(root, armorSlot);
 		    }
 
 	    
