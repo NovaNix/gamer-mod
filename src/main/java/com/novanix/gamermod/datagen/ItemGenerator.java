@@ -26,8 +26,16 @@ public class ItemGenerator extends ItemModelProvider
 	{
 		blockItem(ItemRegister.OAK_TILES, "gamermod:block/oak_tiles");
 		
+		blockItem(ItemRegister.OAK_TILE_STAIRS, "gamermod:block/oak_tile_stairs");
+		blockItem(ItemRegister.OAK_TILE_SLAB, "gamermod:block/oak_tile_slab");
+		
+		blockItem(ItemRegister.FROG_STATUE, "gamermod:block/frog_statue");
 		
 		generatedItem(ItemRegister.METAL_CAKE, mcLoc("gamermod:item/metal_cake"));
+		
+		//blockItem(ItemRegister.DON_GEROS_MASK, "gamermod:block/don_geros_mask");
+		
+		generatedItem(ItemRegister.MORPHITE, mcLoc("gamermod:item/morphite"));
 	}
 
 	

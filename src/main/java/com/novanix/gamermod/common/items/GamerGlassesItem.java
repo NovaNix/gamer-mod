@@ -1,4 +1,4 @@
-package com.novanix.gamermod.common.armor;
+package com.novanix.gamermod.common.items;
 
 import java.util.function.Consumer;
 

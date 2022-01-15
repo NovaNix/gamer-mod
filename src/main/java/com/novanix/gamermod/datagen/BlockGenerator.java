@@ -25,6 +25,7 @@ public class BlockGenerator extends BlockStateProvider
 		stairsBlock((StairBlock) BlockRegister.OAK_TILE_STAIRS, "oak_tile", mcLoc("gamermod:block/oak_tiles"));
 		slabBlock((SlabBlock) BlockRegister.OAK_TILE_SLAB, BlockRegister.OAK_TILES.getRegistryName(), mcLoc("gamermod:block/oak_tiles"));
 		
+		//simpleBlock(BlockRegister.DON_GEROS_MASK);
 	}
 
 }

@@ -20,7 +20,7 @@ public class GamerMod
 
 	public static final String MOD_ID = "gamermod";
 	
-	private static final Logger LOGGER = LogManager.getLogger();
+	public static final Logger LOGGER = LogManager.getLogger();
 	
 	public GamerMod()
 	{
@@ -36,6 +36,7 @@ public class GamerMod
         
         BlockRegister.register();
         ItemRegister.register();
+        SoundRegister.register();
 	}
 	
     private void setup(final FMLCommonSetupEvent event)

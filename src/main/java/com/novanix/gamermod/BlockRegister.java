@@ -2,6 +2,7 @@ package com.novanix.gamermod;
 
 import java.util.HashMap;
 
+import com.novanix.gamermod.common.blocks.FrogStatueBlock;
 import com.novanix.gamermod.common.blocks.MetalCakeBlock;
 
 import net.minecraft.world.level.block.Block;
@@ -34,7 +35,7 @@ public class BlockRegister
 	public static final Block OAK_TILE_SLAB = register("oak_tile_slab", new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 	
 	public static final Block METAL_CAKE = register("metal_cake", new MetalCakeBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL, MaterialColor.METAL).requiresCorrectToolForDrops().strength(5.0F, 1200.0F).sound(SoundType.ANVIL)));
-	
+	public static final Block FROG_STATUE = register("frog_statue", new FrogStatueBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.8F)));
 	
 	public static void register()
 	{

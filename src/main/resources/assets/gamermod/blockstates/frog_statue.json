@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "gamermod:block/frog_statue",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "gamermod:block/frog_statue",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "gamermod:block/frog_statue"
+    },
+    "facing=west": {
+      "model": "gamermod:block/frog_statue",
+      "y": 90
+    }
+  }
+}
