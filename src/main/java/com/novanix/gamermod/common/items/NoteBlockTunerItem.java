@@ -132,7 +132,7 @@ public class NoteBlockTunerItem extends Item
 	@Override
 	public int getBarWidth(ItemStack pStack) 
 	{
-		return Math.round(13.0F - (13f * (((float) getTunerNote(pStack)) / 23f)));
+		return Math.round(13f * (((float) getTunerNote(pStack)) / 23f));
 	}
 
 	@Override
