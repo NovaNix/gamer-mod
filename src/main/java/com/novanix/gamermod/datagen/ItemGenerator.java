@@ -36,6 +36,8 @@ public class ItemGenerator extends ItemModelProvider
 		//blockItem(ItemRegister.DON_GEROS_MASK, "gamermod:block/don_geros_mask");
 		
 		generatedItem(ItemRegister.MORPHITE, mcLoc("gamermod:item/morphite"));
+		
+		blockItem(ItemRegister.ROPE, "gamermod:block/rope");
 	}
 
 	

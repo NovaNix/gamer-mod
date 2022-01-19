@@ -46,6 +46,7 @@ public class ItemRegister
 	
 	public static final Item NOTEBLOCK_TUNER = register("noteblock_tuner", new NoteBlockTunerItem(new Properties().tab(CreativeModeTab.TAB_TOOLS)));
 	
+	public static final Item ROPE = registerBlock(BlockRegister.ROPE, CreativeModeTab.TAB_DECORATIONS);
 	
 	
 	public static final MorphiteMaterial MORPHITE_MATERIAL = new MorphiteMaterial();
