@@ -46,7 +46,6 @@ public class NoteBlockTunerItem extends Item
 	public ItemStack getDefaultInstance() 
 	{
 		ItemStack stack = super.getDefaultInstance();
-		//stack.setTag
 	
 		setTunerNote(stack, 0);
 		

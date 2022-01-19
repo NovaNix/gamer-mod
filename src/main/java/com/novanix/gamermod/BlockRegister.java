@@ -4,13 +4,16 @@ import java.util.HashMap;
 
 import com.novanix.gamermod.common.blocks.FrogStatueBlock;
 import com.novanix.gamermod.common.blocks.MetalCakeBlock;
+import com.novanix.gamermod.common.blocks.SpringWaterBlock;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -36,6 +39,8 @@ public class BlockRegister
 	
 	public static final Block METAL_CAKE = register("metal_cake", new MetalCakeBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL, MaterialColor.METAL).requiresCorrectToolForDrops().strength(5.0F, 1200.0F).sound(SoundType.ANVIL)));
 	public static final Block FROG_STATUE = register("frog_statue", new FrogStatueBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.8F)));
+	
+	public static final Block SPRING_WATER = register("spring_water", new SpringWaterBlock(() -> Fluids.WATER, BlockBehaviour.Properties.of(Material.WATER).noCollission().strength(100.0F).noDrops()));
 	
 	public static void register()
 	{

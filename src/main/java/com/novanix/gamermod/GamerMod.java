@@ -37,13 +37,14 @@ public class GamerMod
         BlockRegister.register();
         ItemRegister.register();
         SoundRegister.register();
+        LayerRegister.register();
+        BlockEntityRegister.register();
 	}
 	
     private void setup(final FMLCommonSetupEvent event)
     {
         // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        LOGGER.info("Preinit Gamer Mod");
     }
 
 //    private void enqueueIMC(final InterModEnqueueEvent event)

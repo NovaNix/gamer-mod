@@ -10,29 +10,23 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class LayerRegister 
 {
 
-//	private static final DeferredRegister<> LAYERS = DeferredRegister.create(ForgeRegistries.BLOCKS, GamerMod.MOD_ID);
-//	
-//	
-//	public static ModelLayerLocation register(String name, Supplier<LayerDefinition> definition)
-//	{
-//		ModelLayerLocation location = new ModelLayerLocation(new ResourceLocation(GamerMod.MOD_ID, name), name);
-//	}
-//	
-//	public static void register()
-//	{
-//		
-//	}
-//	
-//	@SubscribeEvent
-//    public static void onRegisterLayers(EntityRenderersEvent.RegisterLayerDefinitions event) 
-//	{
-//        event.registerLayerDefinition(ThiefModel.THIEF_LAYER, ThiefModel::createBodyLayer);
-//    }
+	public static void register()
+	{
+		GamerMod.LOGGER.info("Registering Layers");
+		FMLJavaModLoadingContext.get().getModEventBus().register(LayerRegister.class);
+	}
+
+	@SubscribeEvent
+    public static void onRegisterLayers(EntityRenderersEvent.RegisterLayerDefinitions event) 
+	{
+        event.registerLayerDefinition(GamerGlassesModel.LAYER_LOCATION, GamerGlassesModel::createBodyLayer);
+    }
 	
 }

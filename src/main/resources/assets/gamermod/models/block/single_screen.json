@@ -1,0 +1,6 @@
+{
+    "parent": "gamermod:block/template_screen",
+    "textures": {
+        "screen": "gamermod:block/screen_single"
+    }
+ }

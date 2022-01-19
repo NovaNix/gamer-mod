@@ -2,6 +2,7 @@ package com.novanix.gamermod.common.items;
 
 import java.util.function.Consumer;
 
+import com.novanix.gamermod.client.models.GamerGlassesModel;
 import com.novanix.gamermod.client.models.ModelArmor;
 
 import net.minecraft.client.Minecraft;
@@ -41,7 +42,7 @@ public class GamerGlassesItem extends Item
 		    {
 				// Borrowed from botania since the whole entity layer system makes no sense to me
 				var entityModels = Minecraft.getInstance().getEntityModels();
-				var root = entityModels.bakeLayer(ModelLayers.PLAYER_HEAD);
+				var root = entityModels.bakeLayer(GamerGlassesModel.LAYER_LOCATION);
 				return (A) new ModelArmor(root, armorSlot);
 		    }
 

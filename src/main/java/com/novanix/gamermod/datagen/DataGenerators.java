@@ -16,6 +16,7 @@ public class DataGenerators
         DataGenerator generator = event.getGenerator();
         generator.addProvider(new BlockGenerator(generator, event.getExistingFileHelper()));
         generator.addProvider(new ItemGenerator(generator, event.getExistingFileHelper()));
+        generator.addProvider(new LanguageGenerator(generator,"en_us"));
         //generator.addProvider(new LootTables(generator));
     }
 	
