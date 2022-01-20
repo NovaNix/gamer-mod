@@ -1,2 +1,4 @@
 {
+    "death.attack.cake": "%1$s couldn't handle the cake!",
+    "death.attack.cake.player": "%1$s was squashed by a falling cake whilst fighting %2$s"
 }
