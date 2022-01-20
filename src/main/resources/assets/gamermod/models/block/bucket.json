@@ -1,7 +1,7 @@
 {
 	"textures": {
-		"0": "gamermod:iron_bucket",
-		"particle": "gamermod:iron_bucket"
+		"0": "gamermod:block/iron_bucket",
+		"particle": "gamermod:block/iron_bucket"
 	},
 	"elements": [
 		{

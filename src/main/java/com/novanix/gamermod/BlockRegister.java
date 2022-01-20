@@ -2,10 +2,13 @@ package com.novanix.gamermod;
 
 import java.util.HashMap;
 
+import com.novanix.gamermod.common.blocks.BucketBlock;
 import com.novanix.gamermod.common.blocks.FrogStatueBlock;
 import com.novanix.gamermod.common.blocks.MetalCakeBlock;
 import com.novanix.gamermod.common.blocks.SpringWaterBlock;
+import com.novanix.gamermod.common.blocks.VanillaPlaceableBlock;
 
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ChainBlock;
@@ -44,6 +47,8 @@ public class BlockRegister
 	public static final Block SPRING_WATER = register("spring_water", new SpringWaterBlock(() -> Fluids.WATER, BlockBehaviour.Properties.of(Material.WATER).noCollission().strength(100.0F).noDrops()));
 	
 	public static final Block ROPE = register("rope", new ChainBlock(BlockBehaviour.Properties.of(Material.WOOL, MaterialColor.WOOD)));
+	
+	public static final Block BUCKET = register("bucket", new BucketBlock(Items.BUCKET, BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)));
 	
 	public static void register()
 	{
