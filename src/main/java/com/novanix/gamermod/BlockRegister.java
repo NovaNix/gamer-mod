@@ -8,6 +8,7 @@ import com.novanix.gamermod.common.blocks.SpringWaterBlock;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.ChainBlock;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
@@ -41,6 +42,8 @@ public class BlockRegister
 	public static final Block FROG_STATUE = register("frog_statue", new FrogStatueBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.8F)));
 	
 	public static final Block SPRING_WATER = register("spring_water", new SpringWaterBlock(() -> Fluids.WATER, BlockBehaviour.Properties.of(Material.WATER).noCollission().strength(100.0F).noDrops()));
+	
+	public static final Block ROPE = register("rope", new ChainBlock(BlockBehaviour.Properties.of(Material.WOOL, MaterialColor.WOOD)));
 	
 	public static void register()
 	{
