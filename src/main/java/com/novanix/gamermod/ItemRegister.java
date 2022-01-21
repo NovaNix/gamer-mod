@@ -48,6 +48,8 @@ public class ItemRegister
 	
 	public static final Item ROPE = registerBlock(BlockRegister.ROPE, CreativeModeTab.TAB_DECORATIONS);
 	
+	public static final Item SCREEN = registerBlock(BlockRegister.SCREEN, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item SMOOTH_SCREEN = registerBlock(BlockRegister.SMOOTH_SCREEN, CreativeModeTab.TAB_DECORATIONS);
 	
 	public static final MorphiteMaterial MORPHITE_MATERIAL = new MorphiteMaterial();
 	

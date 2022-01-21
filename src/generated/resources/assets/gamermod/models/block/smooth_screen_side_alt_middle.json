@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_glass_pane_side_alt",
+  "textures": {
+    "pane": "gamermod:block/smooth_screen_middle",
+    "edge": "gamermod:block/screen_side"
+  }
+}

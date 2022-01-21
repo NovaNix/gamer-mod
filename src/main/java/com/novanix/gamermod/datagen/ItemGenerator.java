@@ -38,6 +38,9 @@ public class ItemGenerator extends ItemModelProvider
 		generatedItem(ItemRegister.MORPHITE, mcLoc("gamermod:item/morphite"));
 		
 		blockItem(ItemRegister.ROPE, "gamermod:block/rope");
+		
+		generatedItem(ItemRegister.SCREEN, mcLoc("gamermod:block/screen_bottom"));
+		generatedItem(ItemRegister.SMOOTH_SCREEN, mcLoc("gamermod:block/screen_single"));
 	}
 
 	

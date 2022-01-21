@@ -3,8 +3,10 @@ package com.novanix.gamermod;
 import java.util.HashMap;
 
 import com.novanix.gamermod.common.blocks.BucketBlock;
+import com.novanix.gamermod.common.blocks.EmptyBottleBlock;
 import com.novanix.gamermod.common.blocks.FrogStatueBlock;
 import com.novanix.gamermod.common.blocks.MetalCakeBlock;
+import com.novanix.gamermod.common.blocks.ScreenBlock;
 import com.novanix.gamermod.common.blocks.SpringWaterBlock;
 import com.novanix.gamermod.common.blocks.VanillaPlaceableBlock;
 
@@ -44,11 +46,15 @@ public class BlockRegister
 	public static final Block METAL_CAKE = register("metal_cake", new MetalCakeBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL, MaterialColor.METAL).requiresCorrectToolForDrops().strength(5.0F, 1200.0F).sound(SoundType.ANVIL)));
 	public static final Block FROG_STATUE = register("frog_statue", new FrogStatueBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.8F)));
 	
+	public static final Block SCREEN = register("screen", new ScreenBlock(BlockBehaviour.Properties.of(Material.WOOL, MaterialColor.WOOL)));
+	public static final Block SMOOTH_SCREEN = register("smooth_screen", new ScreenBlock(BlockBehaviour.Properties.copy(SCREEN)));
+	
 	public static final Block SPRING_WATER = register("spring_water", new SpringWaterBlock(() -> Fluids.WATER, BlockBehaviour.Properties.of(Material.WATER).noCollission().strength(100.0F).noDrops()));
 	
 	public static final Block ROPE = register("rope", new ChainBlock(BlockBehaviour.Properties.of(Material.WOOL, MaterialColor.WOOD)));
 	
 	public static final Block BUCKET = register("bucket", new BucketBlock(Items.BUCKET, BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)));
+	public static final Block BOTTLE = register("bottle", new EmptyBottleBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).sound(SoundType.GLASS)));
 	
 	public static void register()
 	{

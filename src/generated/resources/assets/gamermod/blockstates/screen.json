@@ -1,0 +1,345 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "gamermod:block/screen_post"
+      }
+    },
+    {
+      "when": {
+        "north": "true",
+        "up": "false",
+        "down": "false"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_side_single"
+      }
+    },
+    {
+      "when": {
+        "north": "false",
+        "up": "false",
+        "down": "false"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_noside_single"
+      }
+    },
+    {
+      "when": {
+        "south": "true",
+        "up": "false",
+        "down": "false"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_side_alt_single"
+      }
+    },
+    {
+      "when": {
+        "south": "false",
+        "up": "false",
+        "down": "false"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_noside_alt_single",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "west": "true",
+        "up": "false",
+        "down": "false"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_side_alt_single",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "west": "false",
+        "up": "false",
+        "down": "false"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_noside_single",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "east": "true",
+        "up": "false",
+        "down": "false"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_side_single",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "east": "false",
+        "up": "false",
+        "down": "false"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_noside_alt_single"
+      }
+    },
+    {
+      "when": {
+        "north": "true",
+        "up": "true",
+        "down": "false"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_side_bottom"
+      }
+    },
+    {
+      "when": {
+        "north": "false",
+        "up": "true",
+        "down": "false"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_noside_bottom"
+      }
+    },
+    {
+      "when": {
+        "south": "true",
+        "up": "true",
+        "down": "false"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_side_alt_bottom"
+      }
+    },
+    {
+      "when": {
+        "south": "false",
+        "up": "true",
+        "down": "false"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_noside_alt_bottom",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "west": "true",
+        "up": "true",
+        "down": "false"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_side_alt_bottom",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "west": "false",
+        "up": "true",
+        "down": "false"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_noside_bottom",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "east": "true",
+        "up": "true",
+        "down": "false"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_side_bottom",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "east": "false",
+        "up": "true",
+        "down": "false"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_noside_alt_bottom"
+      }
+    },
+    {
+      "when": {
+        "north": "true",
+        "up": "false",
+        "down": "true"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_side_top"
+      }
+    },
+    {
+      "when": {
+        "north": "false",
+        "up": "false",
+        "down": "true"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_noside_top"
+      }
+    },
+    {
+      "when": {
+        "south": "true",
+        "up": "false",
+        "down": "true"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_side_alt_top"
+      }
+    },
+    {
+      "when": {
+        "south": "false",
+        "up": "false",
+        "down": "true"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_noside_alt_top",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "west": "true",
+        "up": "false",
+        "down": "true"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_side_alt_top",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "west": "false",
+        "up": "false",
+        "down": "true"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_noside_top",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "east": "true",
+        "up": "false",
+        "down": "true"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_side_top",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "east": "false",
+        "up": "false",
+        "down": "true"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_noside_alt_top"
+      }
+    },
+    {
+      "when": {
+        "north": "true",
+        "up": "true",
+        "down": "true"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_side_middle"
+      }
+    },
+    {
+      "when": {
+        "north": "false",
+        "up": "true",
+        "down": "true"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_noside_middle"
+      }
+    },
+    {
+      "when": {
+        "south": "true",
+        "up": "true",
+        "down": "true"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_side_alt_middle"
+      }
+    },
+    {
+      "when": {
+        "south": "false",
+        "up": "true",
+        "down": "true"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_noside_alt_middle",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "west": "true",
+        "up": "true",
+        "down": "true"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_side_alt_middle",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "west": "false",
+        "up": "true",
+        "down": "true"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_noside_middle",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "east": "true",
+        "up": "true",
+        "down": "true"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_side_middle",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "east": "false",
+        "up": "true",
+        "down": "true"
+      },
+      "apply": {
+        "model": "gamermod:block/screen_noside_alt_middle"
+      }
+    }
+  ]
+}

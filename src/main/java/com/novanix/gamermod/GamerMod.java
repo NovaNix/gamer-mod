@@ -5,10 +5,13 @@ import java.util.stream.Collectors;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
@@ -26,6 +29,7 @@ public class GamerMod
 	{
 		// Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setupClient);
         // Register the enqueueIMC method for modloading
 //        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
 //        // Register the processIMC method for modloading
@@ -46,6 +50,13 @@ public class GamerMod
         // some preinit code
         LOGGER.info("Preinit Gamer Mod");
     }
+    
+    private void setupClient(final FMLClientSetupEvent event) 
+    {
+    	event.enqueueWork(() -> {
+    		ItemBlockRenderTypes.setRenderLayer(BlockRegister.BOTTLE, RenderType.translucent());
+    	});
+	}
 
 //    private void enqueueIMC(final InterModEnqueueEvent event)
 //    {
